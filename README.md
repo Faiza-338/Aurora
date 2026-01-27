@@ -17,13 +17,14 @@ A **premium, animated restaurant demo website** built with **raw HTML, CSS, and 
 5. **Reservation CTA**: Call-to-action for making a reservation with a prominent button.
 6. **Footer**: Minimal footer with restaurant details and social links.
 
+### Website Demo:
+You can view the live demo of the website here:  
+[Aurora](https://aurora-demo.netlify.app/)
+
 ### Technologies Used:
 - **HTML**: Markup for structuring the content.
 - **CSS**: Styling with animations, transitions, and responsive design.
 - **JavaScript**: Used for scroll-based animations and dynamic text effects.
-
-### Demo:
-You can preview the website by simply opening the `index.html` file in your browser. The website is ready for you to integrate images locally.
 
 ### Installation:
 1. Clone the repository:
