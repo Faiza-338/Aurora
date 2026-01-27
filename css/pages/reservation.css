@@ -1,0 +1,311 @@
+/* ============================================
+   RESERVATION PAGE STYLES
+   ============================================ */
+
+/* ============================================
+   RESERVATION SECTION
+   ============================================ */
+.reservation-section {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-bg);
+}
+
+.reservation-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ============================================
+   RESERVATION FORM
+   ============================================ */
+.reservation-form-wrapper {
+  background: var(--color-bg-secondary);
+  padding: 3rem;
+  border: 1px solid rgba(201, 169, 98, 0.1);
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-white-soft);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-white);
+  background: var(--color-bg);
+  border: 1px solid rgba(201, 169, 98, 0.2);
+  transition: border-color var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23c9a962' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.form-group select option {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-white-muted);
+}
+
+.btn-submit {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* ============================================
+   INFO SIDEBAR
+   ============================================ */
+.reservation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  padding: 2rem;
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(201, 169, 98, 0.1);
+}
+
+.info-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-gold);
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list li span:first-child {
+  color: var(--color-white-soft);
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: var(--color-white-soft);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.info-contact {
+  margin-bottom: 0.5rem;
+}
+
+.info-contact a {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+  transition: color var(--transition-base);
+}
+
+.info-contact a:hover {
+  color: var(--color-gold-light);
+}
+
+.info-address {
+  font-size: 0.9rem;
+  color: var(--color-white-soft);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.map-placeholder {
+  aspect-ratio: 16/9;
+  background: var(--color-bg);
+  border: 1px dashed rgba(201, 169, 98, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* ============================================
+   CONFIRMATION MODAL
+   ============================================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  position: relative;
+  background: var(--color-bg-secondary);
+  padding: 4rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid rgba(201, 169, 98, 0.2);
+  transform: translateY(20px);
+  transition: transform var(--transition-smooth);
+}
+
+.modal.active .modal-content {
+  transform: translateY(0);
+}
+
+.modal-icon {
+  color: var(--color-gold);
+  margin-bottom: 2rem;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.modal-text {
+  color: var(--color-white-soft);
+  margin-bottom: 2rem;
+}
+
+.modal-details {
+  background: var(--color-bg);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.modal-details p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+}
+
+.modal-details p:last-child {
+  border-bottom: none;
+}
+
+.modal-details p span:first-child {
+  color: var(--color-white-soft);
+}
+
+.modal-close {
+  min-width: 150px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .reservation-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .reservation-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .reservation-form-wrapper {
+    padding: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .reservation-info {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    padding: 2.5rem 2rem;
+  }
+}

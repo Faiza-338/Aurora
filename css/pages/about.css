@@ -1,0 +1,293 @@
+/* ============================================
+   ABOUT PAGE STYLES
+   ============================================ */
+
+/* ============================================
+   PHILOSOPHY SECTION
+   ============================================ */
+.philosophy {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-bg);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.philosophy-heading {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.philosophy-text p {
+  font-size: 1rem;
+  color: var(--color-white-soft);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.philosophy-image {
+  aspect-ratio: 4/5;
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(201, 169, 98, 0.15);
+  background: var(--color-bg-secondary);
+  overflow: hidden;
+}
+
+.philosophy-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.philosophy-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.philosophy-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.philosophy-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 169, 98, 0.4);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--color-gold);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background var(--transition-smooth), border-color var(--transition-smooth);
+  backdrop-filter: blur(4px);
+}
+
+.philosophy-control:hover {
+  background: rgba(0, 0, 0, 0.55);
+  border-color: var(--color-gold);
+}
+
+.philosophy-prev { left: 1rem; }
+.philosophy-next { right: 1rem; }
+
+.philosophy-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.philosophy-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 169, 98, 0.6);
+  background: transparent;
+  cursor: pointer;
+  transition: background var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.philosophy-dot.active,
+.philosophy-dot:hover {
+  background: var(--color-gold);
+  transform: scale(1.1);
+}
+
+/* ============================================
+   VALUES SECTION
+   ============================================ */
+.values {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-bg-secondary);
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.values-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.value-card {
+  padding: 2.5rem 2rem;
+  background: var(--color-bg);
+  border: 1px solid rgba(201, 169, 98, 0.1);
+  text-align: center;
+  transition: all var(--transition-smooth);
+}
+
+.value-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-5px);
+}
+
+.value-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--color-gold);
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+.value-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: color var(--transition-base);
+}
+
+.value-card:hover .value-name {
+  color: var(--color-gold);
+}
+
+.value-description {
+  font-size: 0.9rem;
+  color: var(--color-white-soft);
+  line-height: 1.7;
+}
+
+/* ============================================
+   TEAM SECTION
+   ============================================ */
+.team {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-bg);
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-image {
+  aspect-ratio: 3/4;
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(201, 169, 98, 0.15);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  position: relative;
+  transition: border-color var(--transition-smooth);
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-smooth), filter var(--transition-smooth);
+}
+
+.team-card:hover .team-image {
+  border-color: var(--color-gold);
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.03);
+}
+
+.team-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  color: var(--color-white-soft);
+  line-height: 1.7;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .philosophy-image {
+    max-width: 500px;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .philosophy,
+  .values,
+  .team {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
