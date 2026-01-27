@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aurora Bistro - An exquisite fine dining experience where culinary artistry meets timeless elegance."
+    />
+    <title>AURORA Bistro | Fine Dining Experience</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/home.css" />
+  </head>
+  <body>
+    <!-- ============================================
+         NAVIGATION
+    ============================================ -->
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo">AURORA</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+      </ul>
+    </div>
+
+    <!-- ============================================
+         HERO SECTION
+    ============================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-image">
+        <img src="images/hero-image.png" alt="Aurora Bistro dining ambience" />
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title" id="hero-title">AURORA</h1>
+        <p class="hero-tagline">
+          Where Culinary Artistry Meets Timeless Elegance
+        </p>
+        <a href="reservation.html" class="btn">Reserve Your Table</a>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FEATURED SECTION
+    ============================================ -->
+    <section class="featured">
+      <div class="container">
+        <div class="featured-grid">
+          <a href="about.html" class="featured-card hidden">
+            <div class="featured-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3>Our Philosophy</h3>
+            <p>Discover the passion and principles that guide every dish we create.</p>
+          </a>
+
+          <a href="menu.html" class="featured-card hidden">
+            <div class="featured-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+              </svg>
+            </div>
+            <h3>The Menu</h3>
+            <p>Explore our curated selection of signature dishes and seasonal creations.</p>
+          </a>
+
+          <a href="story.html" class="featured-card hidden">
+            <div class="featured-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <h3>Our Story</h3>
+            <p>The journey that brought Aurora Bistro from dream to reality.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         QUOTE SECTION
+    ============================================ -->
+    <section class="quote-section">
+      <div class="container">
+        <blockquote class="home-quote hidden">
+          "Every dish tells a story of passion, heritage, and the pursuit of perfection."
+        </blockquote>
+        <p class="quote-author hidden">Chef Alain Ducasse</p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+    ============================================ -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content hidden">
+          <h2>Begin Your Culinary Journey</h2>
+          <p>Experience the art of fine dining in an atmosphere of refined elegance.</p>
+          <a href="reservation.html" class="btn btn-gold">Make a Reservation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">AURORA</div>
+            <p class="footer-tagline">
+              Where every meal becomes a cherished memory.
+            </p>
+          </div>
+
+          <div class="footer-info">
+            <h3 class="footer-heading">Visit Us</h3>
+            <address class="footer-address">
+              1234 Culinary Avenue<br />
+              New York, NY 10001<br /><br />
+              Tuesday - Sunday<br />
+              5:00 PM - 11:00 PM
+            </address>
+          </div>
+
+          <div class="footer-nav">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="story.html">Story</a></li>
+              <li><a href="reservation.html">Reserve</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3 class="footer-heading">Connect</h3>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <img src="images/social-media/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <img src="images/social-media/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <img src="images/social-media/twitter.png" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; 2026 Aurora Bistro. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/pages/home.js"></script>
+  </body>
+</html>

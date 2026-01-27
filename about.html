@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about Aurora Bistro's philosophy, our commitment to excellence, and the passion behind every dish."
+    />
+    <title>About Us | AURORA Bistro</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/about.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav nav-dark" id="nav">
+      <a href="index.html" class="nav-logo">AURORA</a>
+      <ul class="nav-links">
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+      </ul>
+    </div>
+
+    <!-- ============================================
+         PAGE HEADER
+    ============================================ -->
+    <header class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="container">
+        <span class="section-label">Our Philosophy</span>
+        <h1 class="page-title">About Aurora</h1>
+      </div>
+    </header>
+
+    <!-- ============================================
+         PHILOSOPHY SECTION
+    ============================================ -->
+    <section class="philosophy">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="philosophy-content">
+            <h2 class="philosophy-heading hidden">
+              A Symphony of Flavors, Crafted with Passion
+            </h2>
+            <div class="philosophy-text">
+              <p class="hidden">
+                At Aurora Bistro, we believe that exceptional dining is an art form.
+                Each dish is meticulously crafted using only the finest seasonal ingredients,
+                sourced from local artisans and trusted purveyors around the world.
+              </p>
+              <p class="hidden">
+                Our culinary philosophy celebrates the harmony between tradition and innovation,
+                creating unforgettable experiences that linger long after the last bite.
+              </p>
+              <p class="hidden">
+                We are committed to sustainability, supporting local farmers and fishermen
+                who share our dedication to quality and ethical practices. Every ingredient
+                has a story, and we take pride in sharing those stories with our guests.
+              </p>
+            </div>
+          </div>
+          <div class="philosophy-image hidden">
+            <div class="philosophy-slider" id="philosophy-slider">
+              <div class="philosophy-slide active">
+                <img src="images/restaurant1.jpg" alt="Dining room ambience" />
+              </div>
+              <div class="philosophy-slide">
+                <img src="images/restaurant2.jpg" alt="Chef plating a dish" />
+              </div>
+              <div class="philosophy-slide">
+                <img src="images/restaurant3.jpg" alt="Seasonal ingredients close-up" />
+              </div>
+              <div class="philosophy-slide">
+                <img src="images/restaurant4.jpg" alt="Guests enjoying the tasting menu" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         VALUES SECTION
+    ============================================ -->
+    <section class="values">
+      <div class="container">
+        <header class="values-header">
+          <span class="section-label hidden">What We Stand For</span>
+          <h2 class="values-title hidden">Our Core Values</h2>
+        </header>
+
+        <div class="values-grid">
+          <div class="value-card hidden">
+            <span class="value-number">01</span>
+            <h3 class="value-name">Excellence</h3>
+            <p class="value-description">
+              We pursue perfection in every detail, from ingredient selection
+              to plate presentation.
+            </p>
+          </div>
+
+          <div class="value-card hidden">
+            <span class="value-number">02</span>
+            <h3 class="value-name">Authenticity</h3>
+            <p class="value-description">
+              Our recipes honor culinary traditions while embracing
+              creative innovation.
+            </p>
+          </div>
+
+          <div class="value-card hidden">
+            <span class="value-number">03</span>
+            <h3 class="value-name">Sustainability</h3>
+            <p class="value-description">
+              We source responsibly, supporting local producers and
+              minimizing our environmental impact.
+            </p>
+          </div>
+
+          <div class="value-card hidden">
+            <span class="value-number">04</span>
+            <h3 class="value-name">Hospitality</h3>
+            <p class="value-description">
+              Every guest is family. We create warm, memorable experiences
+              that go beyond the meal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TEAM SECTION
+    ============================================ -->
+    <section class="team">
+      <div class="container">
+        <header class="team-header">
+          <span class="section-label hidden">The Artisans</span>
+          <h2 class="team-title hidden">Meet Our Team</h2>
+        </header>
+
+        <div class="team-grid">
+          <div class="team-card hidden">
+            <div class="team-image">
+              <img src="images/chefs/AlainDucasse.jpg" alt="Portrait of Executive Chef Alain Ducasse" />
+            </div>
+            <h3 class="team-name">Alain Ducasse</h3>
+            <span class="team-role">Executive Chef & Founder</span>
+            <p class="team-bio">
+              With over 20 years of experience in Michelin-starred kitchens,
+              Chef Ducasse brings Italian heritage and global inspiration to every creation.
+            </p>
+          </div>
+
+          <div class="team-card hidden">
+            <div class="team-image">
+              <img src="images/chefs/GordonRamsay.jpg" alt="Portrait of Sous Chef Gordon Ramsay" />
+            </div>
+            <h3 class="team-name">Gordon Ramsay</h3>
+            <span class="team-role">Sous Chef</span>
+            <p class="team-bio">
+              Trained in Paris, Gordon's French technique and creative vision
+              elevate our seasonal tasting menus.
+            </p>
+          </div>
+
+          <div class="team-card hidden">
+            <div class="team-image">
+              <img src="images/chefs/HestonBlumenthal.jpg" alt="Portrait of Head Sommelier Heston Blumenthal" />
+            </div>
+            <h3 class="team-name">Heston Blumenthal</h3>
+            <span class="team-role">Head Sommelier</span>
+            <p class="team-bio">
+              Heston curates our award-winning wine program, offering perfect
+              pairings from boutique vineyards worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+    ============================================ -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content hidden">
+          <h2>Experience Our Vision</h2>
+          <p>Join us for an unforgettable culinary journey.</p>
+          <a href="reservation.html" class="btn btn-gold">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">AURORA</div>
+            <p class="footer-tagline">
+              Where every meal becomes a cherished memory.
+            </p>
+          </div>
+
+          <div class="footer-info">
+            <h3 class="footer-heading">Visit Us</h3>
+            <address class="footer-address">
+              1234 Culinary Avenue<br />
+              New York, NY 10001<br /><br />
+              Tuesday - Sunday<br />
+              5:00 PM - 11:00 PM
+            </address>
+          </div>
+
+          <div class="footer-nav">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="story.html">Story</a></li>
+              <li><a href="reservation.html">Reserve</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3 class="footer-heading">Connect</h3>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <img src="images/social-media/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <img src="images/social-media/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <img src="images/social-media/twitter.png" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; 2026 Aurora Bistro. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

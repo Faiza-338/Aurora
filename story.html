@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the story of Aurora Bistro - from Chef Rossi's dream to a celebrated culinary destination."
+    />
+    <title>Our Story | AURORA Bistro</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/story.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav nav-dark" id="nav">
+      <a href="index.html" class="nav-logo">AURORA</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html" class="active">Story</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html" class="active">Story</a></li>
+        <li><a href="reservation.html">Reserve</a></li>
+      </ul>
+    </div>
+
+    <!-- ============================================
+         PAGE HEADER
+    ============================================ -->
+    <header class="page-header">
+      <div class="page-header-bg"></div>
+      <div class="container">
+        <span class="section-label">The Journey</span>
+        <h1 class="page-title">Our Story</h1>
+        <p class="page-subtitle">From humble kitchens to a Michelin-starred journey</p>
+      </div>
+    </header>
+
+    <!-- ============================================
+         QUOTE HERO
+    ============================================ -->
+    <section class="story-quote-section">
+      <div class="story-quote-bg"></div>
+      <div class="container">
+        <blockquote class="story-quote" id="story-quote">
+          "Every dish tells a story of passion, heritage, and the pursuit of perfection."
+        </blockquote>
+        <p class="story-author hidden">Chef Alain Ducasse, Founder</p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TIMELINE SECTION
+    ============================================ -->
+    <section class="timeline">
+      <div class="container">
+        <header class="timeline-header">
+          <span class="section-label hidden">Milestones</span>
+          <h2 class="timeline-title hidden">The Aurora Journey</h2>
+        </header>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item hidden">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">1995</span>
+              <h3 class="timeline-heading">The Dream Begins</h3>
+              <p class="timeline-text">
+                A young Alain Ducasse, working in his grandmother's kitchen in Tuscany,
+                discovers his passion for creating dishes that bring people together.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <img src="images/timeline/1995.png" alt="Chef in grandmother's Tuscan kitchen in 1995" />
+            </div>
+          </div>
+
+          <div class="timeline-item hidden">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2005</span>
+              <h3 class="timeline-heading">World Exploration</h3>
+              <p class="timeline-text">
+                After a decade training in Michelin-starred kitchens across Europe and Asia,
+                Chef Rossi develops his signature style blending Italian heritage with global techniques.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <img src="images/timeline/2005.png" alt="World exploration and culinary training in 2005" />
+            </div>
+          </div>
+
+          <div class="timeline-item hidden">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2015</span>
+              <h3 class="timeline-heading">Aurora is Born</h3>
+              <p class="timeline-text">
+                In a historic building on Culinary Avenue, Aurora Bistro opens its doors.
+                The name reflects the beauty of new beginnings and the light of inspiration.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <img src="images/timeline/2015.png" alt="Aurora Bistro opens its doors in 2015" />
+            </div>
+          </div>
+
+          <div class="timeline-item hidden">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2018</span>
+              <h3 class="timeline-heading">First Michelin Star</h3>
+              <p class="timeline-text">
+                Aurora receives its first Michelin star, recognition of the team's dedication
+                to excellence and their commitment to creating unforgettable dining experiences.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <img src="images/timeline/2018.png" alt="Aurora receives first Michelin star in 2018" />
+            </div>
+          </div>
+
+          <div class="timeline-item hidden">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Today</span>
+              <h3 class="timeline-heading">The Journey Continues</h3>
+              <p class="timeline-text">
+                Now a beloved culinary destination, Aurora continues to evolve while staying
+                true to its founding vision: creating extraordinary experiences through food.
+              </p>
+            </div>
+            <div class="timeline-image">
+              <img src="images/timeline/today.png" alt="Aurora Bistro today and the journey continues" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         VISION SECTION
+    ============================================ -->
+    <section class="vision">
+      <div class="container">
+        <div class="vision-grid">
+          <div class="vision-image hidden">
+            <img src="images/vision.png" alt="Aurora Bistro future vision" />
+          </div>
+          <div class="vision-content">
+            <span class="section-label hidden">Looking Forward</span>
+            <h2 class="vision-heading hidden">Our Vision</h2>
+            <p class="vision-text hidden">
+              As we look to the future, our commitment remains unchanged: to create
+              moments of joy and connection through exceptional cuisine. We continue
+              to push boundaries, explore new techniques, and nurture the next
+              generation of culinary talent.
+            </p>
+            <p class="vision-text hidden">
+              Every evening at Aurora is an opportunity to write a new chapter,
+              to surprise and delight, and to remind our guests why the shared
+              experience of a beautiful meal is one of life's greatest pleasures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+    ============================================ -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content hidden">
+          <h2>Be Part of Our Story</h2>
+          <p>Join us for an evening you will remember.</p>
+          <a href="reservation.html" class="btn btn-gold">Reserve Your Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">AURORA</div>
+            <p class="footer-tagline">
+              Where every meal becomes a cherished memory.
+            </p>
+          </div>
+
+          <div class="footer-info">
+            <h3 class="footer-heading">Visit Us</h3>
+            <address class="footer-address">
+              1234 Culinary Avenue<br />
+              New York, NY 10001<br /><br />
+              Tuesday - Sunday<br />
+              5:00 PM - 11:00 PM
+            </address>
+          </div>
+
+          <div class="footer-nav">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="story.html">Story</a></li>
+              <li><a href="reservation.html">Reserve</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3 class="footer-heading">Connect</h3>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <img src="images/social-media/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <img src="images/social-media/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <img src="images/social-media/twitter.png" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; 2026 Aurora Bistro. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/pages/story.js"></script>
+  </body>
+</html>
