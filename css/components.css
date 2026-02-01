@@ -502,3 +502,65 @@
     font-size: 0.75rem;
   }
 }
+/* ============================================
+   PROMO POPUP
+============================================ */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-smooth),
+              visibility var(--transition-smooth);
+  z-index: 9999;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  background: var(--color-bg-secondary);
+  padding: 3rem;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  transform: scale(0.85);
+  opacity: 0;
+  transition: transform var(--transition-smooth),
+              opacity var(--transition-smooth);
+}
+
+.popup-overlay.active .popup {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popup h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.popup p {
+  color: var(--color-white-soft);
+  margin-bottom: 2rem;
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
