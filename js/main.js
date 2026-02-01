@@ -179,6 +179,32 @@ function initPhilosophySlider() {
 }
 
 // ============================================
+// PROMO POPUP (SHOWS EVERY TIME)
+// ============================================
+function initPromoPopup() {
+  const overlay = document.getElementById("promo-overlay");
+  const closeBtn = document.getElementById("popup-close");
+
+  if (!overlay || !closeBtn) return;
+
+  // Show popup every time page loads
+  setTimeout(() => {
+    overlay.classList.add("active");
+  }, 600);
+
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+  });
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove("active");
+    }
+  });
+}
+
+
+// ============================================
 // INITIALIZE
 // ============================================
 function init() {
@@ -188,6 +214,7 @@ function init() {
   initSmoothScroll();
   initPageLoad();
   initPhilosophySlider();
+  initPromoPopup();
 }
 
 // Run when DOM is ready
