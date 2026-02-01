@@ -203,6 +203,25 @@ function initPromoPopup() {
   });
 }
 
+// ============================================
+// SCROLL PROGRESS BAR
+// ============================================
+function initScrollProgress() {
+  const progressBar = document.getElementById("scroll-progress-bar");
+  if (!progressBar) return;
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    progressBar.style.width = `${scrollPercent}%`;
+  });
+}
+
+
 
 // ============================================
 // INITIALIZE
