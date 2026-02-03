@@ -221,6 +221,27 @@ function initScrollProgress() {
   });
 }
 
+function initHorizontalScroll() {
+  const section = document.querySelector(".horizontal-section");
+  const track = section?.querySelector(".horizontal-track");
+
+  if (!section || !track) return;
+  const totalPanels= track.children.length;
+  const scrolllength = window.innerWidth * (totalPanels - 1);
+
+  window.addEventListener("scroll", () => {
+    const sectionTop = section.offsetTop;
+    const scrollY = window.scrollY;
+
+    if (
+      scrollY >= sectionTop &&
+      scrollY <= sectionTop + scrollLength
+    ) {
+      const progress = scrollY - sectionTop;
+      track.style.transform = `translateX(${-progress}px)`;
+    }
+  });
+}
 
 
 // ============================================
@@ -234,6 +255,7 @@ function init() {
   initPageLoad();
   initPhilosophySlider();
   initPromoPopup();
+  initHorizontalScroll();
 }
 
 // Run when DOM is ready
