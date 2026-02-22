@@ -49,6 +49,37 @@ function initHeroSlider() {
   const prevBtn = document.getElementById("hero-prev");
   const nextBtn = document.getElementById("hero-next");
 
+  // ============================================
+// PROMO POPUP
+// ============================================
+function initPromoPopup() {
+  const overlay = document.getElementById("promo-overlay");
+  const closeBtn = document.getElementById("popup-close");
+
+  if (!overlay || !closeBtn) return;
+
+  const now = Date.now();
+  const lastShown = localStorage.getItem("promoLastShown");
+  const cooldown = 15000; // 15 seconds
+
+  if (!lastShown || now - lastShown > cooldown) {
+    setTimeout(() => {
+      overlay.classList.add("active");
+      localStorage.setItem("promoLastShown", now);
+    }, 600);
+  }
+
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+  });
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove("active");
+    }
+  });
+}
+
   // Slider exists only if you added the slider HTML
   if (!track || !dotsWrap || !prevBtn || !nextBtn) return;
 
@@ -120,6 +151,7 @@ function initHomePage() {
   initHeroAnimation();
   initTaglineAnimation();
   initHeroSlider();
+  initPromoPopup();
 }
 
 // Run when DOM is ready
